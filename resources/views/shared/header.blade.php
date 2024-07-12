@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary py-3">
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="d-flex justify-content-between container">
         <a class="navbar-brand" href="/">
             <img
