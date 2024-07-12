@@ -3,10 +3,10 @@
 @section("main")
     <main>
         <section class="container my-5">
-            <h1 class="text-center">Laravel Template</h1>
+            <h1 class="text-center">DC Comics</h1>
             <div class="d-flex justify-content-center m-5">
                 <img
-                    src="{{ Vite::asset("resources/img/duck.jpg") }}"
+                    src="{{ Vite::asset("resources/img/dc-logo.png") }}"
                     alt="Paperella Laravel Template"
                 />
             </div>
