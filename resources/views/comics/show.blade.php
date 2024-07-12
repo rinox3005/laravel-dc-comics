@@ -1,7 +1,7 @@
 @extends("layouts.base-layout")
 
 @section("main")
-    <div class="container">
+    <div class="text-light container">
         <h1>{{ $comic->title }}</h1>
         <p>{{ $comic->description }}</p>
         <a href="{{ route("comics.index") }}">Torna alla home</a>

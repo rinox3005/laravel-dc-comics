@@ -1,7 +1,8 @@
 @extends("layouts.base-layout")
 
 @section("main")
-    <div class="container">
+    <div class="bg-body-tertiary form-style container px-4 py-4">
+        <h1 class="text-center">Add New Comic Book</h1>
         <form action="{{ route("comics.store") }}" method="POST">
             @csrf
             <div class="form-group">
@@ -21,9 +22,7 @@
                     class="form-control"
                     id="description"
                     name="description"
-                >
-{{ old("description") }}</textarea
-                >
+                ></textarea>
             </div>
 
             <div class="form-group">
@@ -94,8 +93,14 @@
                 </div>
             </div>
 
-            <button type="submit" class="btn btn-primary">Create Comic</button>
+            <div class="d-flex justify-content-between mt-4">
+                <a href="{{ route("comics.index") }}" class="btn btn-primary">
+                    Back
+                </a>
+                <button type="submit" class="btn btn-primary">
+                    Create Comic
+                </button>
+            </div>
         </form>
-        <a href="{{ route("comics.index") }}">Torna alla home</a>
     </div>
 @endsection

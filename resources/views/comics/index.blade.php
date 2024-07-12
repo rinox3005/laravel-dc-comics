@@ -1,17 +1,35 @@
 @extends("layouts.base-layout")
 
 @section("main")
-    <div class="container">
-        <h1>Comics Available</h1>
-        <a href="{{ route("comics.create") }}">Add new comic book</a>
-        <ul>
+    <div class="container my-5">
+        <div class="row g-4">
             @foreach ($comics as $comic)
-                <li>
-                    <a href="{{ route("comics.show", $comic) }}">
-                        {{ $comic->title }}
-                    </a>
-                </li>
+                <div class="col-lg-2 col-md-4 col-sm-6 text-center">
+                    <div class="card h-100">
+                        <div class="thumb-container">
+                            <a href="{{ route("comics.show", $comic) }}">
+                                <img
+                                    class="thumb"
+                                    src="{{ $comic->thumb }}"
+                                    alt="{{ $comic->title }}"
+                                />
+                            </a>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                {{ $comic->title }}
+                            </h5>
+                        </div>
+                    </div>
+                </div>
             @endforeach
-        </ul>
+        </div>
     </div>
 @endsection
+
+{{--
+    <a href="{{ route("comics.show", $comic) }}">
+    
+    </a>
+--}}
