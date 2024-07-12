@@ -12,6 +12,25 @@ body {
     background-color: $body-bg-color;
 }
 
+footer {
+    position: relative;
+    background-image: url(/resources/img/dc-footer.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85); /* Black overlay with 50% opacity */
+    z-index: 1;
+}
+
 a {
     text-decoration: none;
 }
@@ -60,4 +79,9 @@ button a {
 
 .form-style {
     border-radius: 20px;
+}
+
+footer h5 {
+    font-size: 23px;
+    font-weight: bold;
 }

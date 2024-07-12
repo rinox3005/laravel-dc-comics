@@ -1,23 +1,23 @@
-<footer class="bg-body-tertiary py-5">
-    <div class="container">
+<footer class="py-5">
+    <div class="position-relative z-2 container">
         <div class="row">
             <div class="col-6 col-md-2 mb-3">
                 <h5>Main Sections</h5>
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2">
-                        <a href="#" class="nav-link text-muted p-0">Home</a>
+                        <a href="#" class="nav-link text-light p-0">Home</a>
                     </li>
                     <li class="nav-item mb-2">
-                        <a href="#" class="nav-link text-muted p-0">Features</a>
+                        <a href="#" class="nav-link text-light p-0">Features</a>
                     </li>
                     <li class="nav-item mb-2">
-                        <a href="#" class="nav-link text-muted p-0">Pricing</a>
+                        <a href="#" class="nav-link text-light p-0">Pricing</a>
                     </li>
                     <li class="nav-item mb-2">
-                        <a href="#" class="nav-link text-muted p-0">FAQs</a>
+                        <a href="#" class="nav-link text-light p-0">FAQs</a>
                     </li>
                     <li class="nav-item mb-2">
-                        <a href="#" class="nav-link text-muted p-0">Shop</a>
+                        <a href="#" class="nav-link text-light p-0">Shop</a>
                     </li>
                 </ul>
             </div>
@@ -26,27 +26,27 @@
                 <h5>Comics</h5>
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2">
-                        <a href="#" class="nav-link text-muted p-0">
+                        <a href="#" class="nav-link text-light p-0">
                             Comics List
                         </a>
                     </li>
                     <li class="nav-item mb-2">
-                        <a href="#" class="nav-link text-muted p-0">
+                        <a href="#" class="nav-link text-light p-0">
                             Add New Comic
                         </a>
                     </li>
                     <li class="nav-item mb-2">
-                        <a href="#" class="nav-link text-muted p-0">
+                        <a href="#" class="nav-link text-light p-0">
                             Edit Comic
                         </a>
                     </li>
                     <li class="nav-item mb-2">
-                        <a href="#" class="nav-link text-muted p-0">
+                        <a href="#" class="nav-link text-light p-0">
                             Delete Comic
                         </a>
                     </li>
                     <li class="nav-item mb-2">
-                        <a href="#" class="nav-link text-muted p-0">
+                        <a href="#" class="nav-link text-light p-0">
                             About Comics
                         </a>
                     </li>
@@ -57,21 +57,21 @@
                 <h5>Gaming</h5>
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2">
-                        <a href="#" class="nav-link text-muted p-0">Games</a>
+                        <a href="#" class="nav-link text-light p-0">Games</a>
                     </li>
                     <li class="nav-item mb-2">
-                        <a href="#" class="nav-link text-muted p-0">
+                        <a href="#" class="nav-link text-light p-0">
                             Collectibles
                         </a>
                     </li>
                     <li class="nav-item mb-2">
-                        <a href="#" class="nav-link text-muted p-0">Videos</a>
+                        <a href="#" class="nav-link text-light p-0">Videos</a>
                     </li>
                     <li class="nav-item mb-2">
-                        <a href="#" class="nav-link text-muted p-0">Fans</a>
+                        <a href="#" class="nav-link text-light p-0">Fans</a>
                     </li>
                     <li class="nav-item mb-2">
-                        <a href="#" class="nav-link text-muted p-0">News</a>
+                        <a href="#" class="nav-link text-light p-0">News</a>
                     </li>
                 </ul>
             </div>
