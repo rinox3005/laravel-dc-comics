@@ -24,7 +24,7 @@
                     </li>
                     <li class="list-group-item bg-dark text-light">
                         <strong>Sale Date:</strong>
-                        {{ $comic->sale_date }}
+                        {{ Carbon\Carbon::parse($comic->sale_date)->format("d/m/Y") }}
                     </li>
                     <li class="list-group-item bg-dark text-light">
                         <strong>Type:</strong>
