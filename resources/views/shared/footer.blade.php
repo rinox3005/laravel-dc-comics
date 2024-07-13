@@ -1,84 +1,139 @@
+<section class="pre-footer bg-primary py-5">
+    <div class="container">
+        <ul class="row row-cols-lg-5 justify-content-center mb-0 text-center">
+            <li class="nav-item text-uppercase fw-semibold mb-2">
+                <a
+                    href="#"
+                    class="nav-link text-light d-flex align-items-center p-0"
+                >
+                    <i class="fas fa-mobile-screen-button fa-3x pe-3"></i>
+                    <span>Digital Comics</span>
+                </a>
+            </li>
+            <li class="nav-item text-uppercase fw-semibold mb-2">
+                <a
+                    href="#"
+                    class="nav-link text-light d-flex align-items-center p-0"
+                >
+                    <i class="fas fa-shirt fa-3x pe-3"></i>
+                    <span>DC Merchandise</span>
+                </a>
+            </li>
+            <li class="nav-item text-uppercase fw-semibold mb-2">
+                <a
+                    href="#"
+                    class="nav-link text-light d-flex align-items-center p-0"
+                >
+                    <i class="fa-regular fa-copy fa-3x ms-lg-4 pe-3"></i>
+                    <span>Subscription</span>
+                </a>
+            </li>
+            <li class="nav-item text-uppercase fw-semibold mb-2">
+                <a
+                    href="#"
+                    class="nav-link text-light d-flex align-items-center p-0"
+                >
+                    <i class="fas fa-location-dot fa-3x pe-3"></i>
+                    <span>Comic Shop Locator</span>
+                </a>
+            </li>
+            <li class="nav-item text-uppercase fw-semibold mb-2">
+                <a
+                    href="#"
+                    class="nav-link text-light d-flex align-items-center p-0"
+                >
+                    <i class="fas fa-credit-card fa-3x pe-3"></i>
+                    <span>DC Power Visa</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
 <footer class="py-5">
     <div class="position-relative z-2 container">
         <div class="row">
             <div class="col-6 col-md-2 mb-3">
-                <h5>Main Sections</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2">
-                        <a href="#" class="nav-link text-light p-0">Home</a>
-                    </li>
-                    <li class="nav-item mb-2">
-                        <a href="#" class="nav-link text-light p-0">Features</a>
-                    </li>
-                    <li class="nav-item mb-2">
-                        <a href="#" class="nav-link text-light p-0">Pricing</a>
-                    </li>
-                    <li class="nav-item mb-2">
-                        <a href="#" class="nav-link text-light p-0">FAQs</a>
-                    </li>
-                    <li class="nav-item mb-2">
-                        <a href="#" class="nav-link text-light p-0">Shop</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-6 col-md-2 mb-3">
-                <h5>Comics</h5>
+                <h5>DC Comics</h5>
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2">
                         <a href="#" class="nav-link text-light p-0">
-                            Comics List
+                            Characters
                         </a>
                     </li>
                     <li class="nav-item mb-2">
-                        <a href="#" class="nav-link text-light p-0">
-                            Add New Comic
-                        </a>
+                        <a href="#" class="nav-link text-light p-0">Comics</a>
                     </li>
                     <li class="nav-item mb-2">
-                        <a href="#" class="nav-link text-light p-0">
-                            Edit Comic
-                        </a>
+                        <a href="#" class="nav-link text-light p-0">Movies</a>
                     </li>
                     <li class="nav-item mb-2">
-                        <a href="#" class="nav-link text-light p-0">
-                            Delete Comic
-                        </a>
+                        <a href="#" class="nav-link text-light p-0">TV</a>
                     </li>
-                    <li class="nav-item mb-2">
-                        <a href="#" class="nav-link text-light p-0">
-                            About Comics
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-6 col-md-2 mb-3">
-                <h5>Gaming</h5>
-                <ul class="nav flex-column">
                     <li class="nav-item mb-2">
                         <a href="#" class="nav-link text-light p-0">Games</a>
                     </li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3">
+                <h5>DC Policy</h5>
+                <ul class="nav flex-column">
                     <li class="nav-item mb-2">
                         <a href="#" class="nav-link text-light p-0">
-                            Collectibles
+                            Terms Of Use
                         </a>
                     </li>
                     <li class="nav-item mb-2">
-                        <a href="#" class="nav-link text-light p-0">Videos</a>
+                        <a href="#" class="nav-link text-light p-0">
+                            Privacy Policy
+                        </a>
                     </li>
                     <li class="nav-item mb-2">
-                        <a href="#" class="nav-link text-light p-0">Fans</a>
+                        <a href="#" class="nav-link text-light p-0">
+                            Ad Choices
+                        </a>
                     </li>
                     <li class="nav-item mb-2">
-                        <a href="#" class="nav-link text-light p-0">News</a>
+                        <a href="#" class="nav-link text-light p-0">
+                            Advertising
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link text-light p-0">
+                            Subscriptions
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3">
+                <h5>Sites</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link text-light p-0">DC</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link text-light p-0">
+                            DC UNIVERSE INFINITE
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link text-light p-0">DC Kids</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link text-light p-0">DC Shop</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link text-light p-0">
+                            MAD Magazine
+                        </a>
                     </li>
                 </ul>
             </div>
 
             <div class="col-md-5 offset-md-1 mb-3">
                 <form>
-                    <h5>Subscribe to our newsletter</h5>
+                    <h5>SIGN-UP NOW!</h5>
                     <p>Monthly digest of what's new and exciting from us.</p>
                     <div class="d-flex flex-column flex-sm-row w-100 gap-2">
                         <label for="newsletter1" class="visually-hidden">
@@ -99,7 +154,7 @@
         </div>
 
         <div
-            class="d-flex flex-column flex-sm-row justify-content-between border-top my-4 py-4"
+            class="d-flex flex-column flex-sm-row justify-content-between border-top mt-4 py-4"
         >
             <p>© 2024 Rinox Comics, Inc. All rights reserved.</p>
             <ul class="list-unstyled d-flex">
@@ -125,6 +180,25 @@
                     </a>
                 </li>
             </ul>
+            <div class="row">
+                <div class="col socials text-center">
+                    <a href="#" class="text-light mx-2">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-light mx-2">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-light mx-2">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="text-light mx-2">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-light mx-2">
+                        <i class="fab fa-pinterest"></i>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </footer>

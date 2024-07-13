@@ -6,6 +6,10 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>DC Comics</title>
         @vite("resources/js/app.js")
+        <script
+            src="https://kit.fontawesome.com/7711c3f1fc.js"
+            crossorigin="anonymous"
+        ></script>
     </head>
 
     <body>

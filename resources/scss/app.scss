@@ -122,6 +122,19 @@ footer h5 {
     letter-spacing: 1px;
 }
 
+.create-container {
+    height: 250px;
+    overflow: hidden;
+}
+
+.socials {
+    a {
+        i {
+            font-size: 22px;
+        }
+    }
+}
+
 @media (max-width: 768px) {
     .cards-wrapper {
         flex-direction: column;

@@ -1,8 +1,19 @@
 @extends("layouts.base-layout")
 
 @section("main")
-    <div class="bg-body-tertiary form-style container my-4 px-4 py-4">
-        <h1 class="text-center">Add New Comic Book</h1>
+    <div class="create-container">
+        <img
+            class="create-banner w-100"
+            src="{{ Vite::asset("resources/img/create-banner.jpg") }}"
+            alt="create-banner w-100"
+        />
+    </div>
+    <div
+        class="bg-body-tertiary form-style position-relative container my-4 px-4 py-4"
+    >
+        <h4 class="text-uppercase comics-label bg-primary fw-bold text-light">
+            Add new comic book
+        </h4>
         <form action="{{ route("comics.store") }}" method="POST">
             @csrf
             <div class="form-group">
