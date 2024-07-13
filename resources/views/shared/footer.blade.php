@@ -1,6 +1,8 @@
 <section class="pre-footer bg-primary py-5">
     <div class="container">
-        <ul class="row row-cols-lg-5 justify-content-center mb-0 text-center">
+        <ul
+            class="row row-cols-lg-5 row-cols-md-3 row-cols-sm-2 justify-content-center mb-0"
+        >
             <li class="nav-item text-uppercase fw-semibold mb-2">
                 <a
                     href="#"
@@ -42,7 +44,7 @@
                     href="#"
                     class="nav-link text-light d-flex align-items-center p-0"
                 >
-                    <i class="fas fa-credit-card fa-3x pe-3"></i>
+                    <i class="fas fa-credit-card fa-3x ms-lg-4 pe-3"></i>
                     <span>DC Power Visa</span>
                 </a>
             </li>
@@ -52,7 +54,7 @@
 <footer class="py-5">
     <div class="position-relative z-2 container">
         <div class="row">
-            <div class="col-6 col-md-2 mb-3">
+            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 mb-3">
                 <h5>DC Comics</h5>
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2">
@@ -75,7 +77,7 @@
                 </ul>
             </div>
 
-            <div class="col-6 col-md-2 mb-3">
+            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 mb-3">
                 <h5>DC Policy</h5>
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2">
@@ -106,7 +108,31 @@
                 </ul>
             </div>
 
-            <div class="col-6 col-md-2 mb-3">
+            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 mb-3">
+                <h5>Sites</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link text-light p-0">DC</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link text-light p-0">
+                            DC UNIVERSE INFINITE
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link text-light p-0">DC Kids</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link text-light p-0">DC Shop</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link text-light p-0">
+                            MAD Magazine
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 mb-3">
                 <h5>Sites</h5>
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2">
@@ -131,7 +157,7 @@
                 </ul>
             </div>
 
-            <div class="col-md-5 offset-md-1 mb-3">
+            <div class="col-lg-4 col-md-12 mb-3">
                 <form>
                     <h5>SIGN-UP NOW!</h5>
                     <p>Monthly digest of what's new and exciting from us.</p>

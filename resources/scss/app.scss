@@ -148,4 +148,21 @@ footer h5 {
     .trending-container {
         text-align: -webkit-center;
     }
+    footer {
+        text-align: center;
+    }
+
+    .pre-footer {
+        display: flex;
+        justify-content: center;
+        ul {
+            padding-left: 0;
+            li {
+                a {
+                    justify-content: space-evenly;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
 }
