@@ -1,7 +1,17 @@
 @extends("layouts.base-layout")
 
 @section("main")
-    <div class="container my-5">
+    <div>
+        <img
+            class="comics-banner w-100"
+            src="{{ Vite::asset("resources/img/comics-banner.webp") }}"
+            alt="comics-banner w-100"
+        />
+    </div>
+    <div class="position-relative container my-5">
+        <h4 class="text-uppercase comics-label bg-primary fw-bold text-light">
+            Top Sellers
+        </h4>
         <div class="row g-4">
             @foreach ($comics as $comic)
                 <div class="col-lg-2 col-md-4 col-sm-6 text-center">

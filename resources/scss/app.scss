@@ -107,6 +107,21 @@ footer h5 {
     }
 }
 
+.trending-container {
+    h4 {
+        width: fit-content;
+    }
+}
+
+.comics-label {
+    position: absolute;
+    padding: 5px 20px;
+    top: -45px;
+    left: 0;
+    font-size: 23px;
+    letter-spacing: 1px;
+}
+
 @media (max-width: 768px) {
     .cards-wrapper {
         flex-direction: column;
@@ -115,5 +130,9 @@ footer h5 {
     .carousel-control-prev,
     .carousel-control-next {
         display: none;
+    }
+
+    .trending-container {
+        text-align: -webkit-center;
     }
 }

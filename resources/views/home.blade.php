@@ -52,9 +52,14 @@
             </button>
         </div>
         <div class="container">
-            <h2 class="text-light display-5 fw-semibold my-4 text-center">
-                Trending DC Movies
-            </h2>
+            <div class="trending-container">
+                <h4
+                    class="text-light fw-semibold bg-primary text-uppercase mb-2 mt-4 p-2"
+                >
+                    Trending DC Movies
+                </h4>
+            </div>
+
             <div id="moviesCarousel" class="carousel slide">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
