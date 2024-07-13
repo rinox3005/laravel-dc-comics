@@ -4,7 +4,7 @@
             <img
                 class="nav-logo"
                 src="{{ Vite::asset("resources/img/dc-logo.png") }}"
-                alt="Paperella Laravel Template"
+                alt="nav-logo"
             />
         </a>
         <button
@@ -20,15 +20,19 @@
         </button>
         <div class="navbar-collapse collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mb-lg-0 mb-2 me-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">
+                <li class="nav-item pe-3">
+                    <a
+                        class="nav-link text-uppercase"
+                        aria-current="page"
+                        href="#"
+                    >
                         Characters
                     </a>
                 </li>
 
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown pe-3">
                     <a
-                        class="nav-link dropdown-toggle"
+                        class="nav-link text-uppercase dropdown-toggle"
                         href="#"
                         role="button"
                         data-bs-toggle="dropdown"
@@ -61,29 +65,29 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Movies</a>
+                <li class="nav-item pe-3">
+                    <a class="nav-link text-uppercase" href="#">Movies</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">TV</a>
+                <li class="nav-item pe-3">
+                    <a class="nav-link text-uppercase" href="#">TV</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Games</a>
+                <li class="nav-item pe-3">
+                    <a class="nav-link text-uppercase" href="#">Games</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Collectibles</a>
+                <li class="nav-item pe-3">
+                    <a class="nav-link text-uppercase" href="#">Collectibles</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Videos</a>
+                <li class="nav-item pe-3">
+                    <a class="nav-link text-uppercase" href="#">Videos</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Fans</a>
+                <li class="nav-item pe-3">
+                    <a class="nav-link text-uppercase" href="#">Fans</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">News</a>
+                <li class="nav-item pe-3">
+                    <a class="nav-link text-uppercase" href="#">News</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Shop</a>
+                <li class="nav-item pe-3">
+                    <a class="nav-link text-uppercase" href="#">Shop</a>
                 </li>
             </ul>
         </div>

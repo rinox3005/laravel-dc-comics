@@ -1,7 +1,7 @@
 @extends("layouts.base-layout")
 
 @section("main")
-    <div class="bg-body-tertiary form-style container px-4 py-4">
+    <div class="bg-body-tertiary form-style container my-4 px-4 py-4">
         <h1 class="text-center">Add New Comic Book</h1>
         <form action="{{ route("comics.store") }}" method="POST">
             @csrf
