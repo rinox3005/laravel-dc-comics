@@ -130,7 +130,21 @@ footer h5 {
     }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 1200px) {
+    .pre-footer {
+        ul {
+            li {
+                a {
+                    i {
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
     .cards-wrapper {
         flex-direction: column;
     }
