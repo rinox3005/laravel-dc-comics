@@ -9,7 +9,7 @@
         />
     </div>
     <div
-        class="bg-body-tertiary form-style position-relative container my-4 px-4 py-4"
+        class="form-style position-relative text-light fw-semibold container my-4 px-4 py-4"
     >
         <h4 class="text-uppercase comics-label bg-primary fw-bold text-light">
             Add new comic book
@@ -17,10 +17,10 @@
         <form action="{{ route("comics.store") }}" method="POST">
             @csrf
             <div class="form-group">
-                <label for="title">Title</label>
+                <label class="mb-1" for="title">Title</label>
                 <input
                     type="text"
-                    class="form-control"
+                    class="form-control mb-1"
                     id="title"
                     name="title"
                     required
@@ -28,77 +28,82 @@
             </div>
 
             <div class="form-group">
-                <label for="description">Description</label>
+                <label class="mb-1" for="description">Description</label>
                 <textarea
-                    class="form-control"
+                    class="form-control mb-1"
                     id="description"
                     name="description"
                 ></textarea>
             </div>
 
             <div class="form-group">
-                <label for="thumb">Thumbnail URL</label>
+                <label class="mb-1" for="thumb">Thumbnail URL</label>
                 <input
                     type="text"
-                    class="form-control"
+                    class="form-control mb-1"
                     id="thumb"
                     name="thumb"
                 />
             </div>
 
             <div class="form-group">
-                <label for="price">Price</label>
+                <label class="mb-1" for="price">Price</label>
                 <input
                     type="number"
                     step="0.50"
-                    class="form-control"
+                    class="form-control mb-1"
                     id="price"
                     name="price"
                 />
             </div>
 
             <div class="form-group">
-                <label for="series">Series</label>
+                <label class="mb-1" for="series">Series</label>
                 <input
                     type="text"
-                    class="form-control"
+                    class="form-control mb-1"
                     id="series"
                     name="series"
                 />
             </div>
 
             <div class="form-group">
-                <label for="sale_date">Sale Date</label>
+                <label class="mb-1" for="sale_date">Sale Date</label>
                 <input
                     type="date"
-                    class="form-control"
+                    class="form-control mb-1"
                     id="sale_date"
                     name="sale_date"
                 />
             </div>
 
             <div class="form-group">
-                <label for="type">Type</label>
-                <input type="text" class="form-control" id="type" name="type" />
+                <label class="mb-1" for="type">Type</label>
+                <input
+                    type="text"
+                    class="form-control mb-1"
+                    id="type"
+                    name="type"
+                />
             </div>
 
             <div class="form-group">
-                <label for="artists">Artists</label>
+                <label class="mb-1" for="artists">Artists</label>
                 <div id="artists">
                     <input
                         type="text"
-                        class="form-control mb-2"
+                        class="form-control mb-1 mb-2"
                         name="artists"
                     />
                 </div>
             </div>
 
             <div class="form-group">
-                <label for="writers">Writers</label>
+                <label class="mb-1" for="writers">Writers</label>
                 <div id="writers">
                     <input
                         type="text"
-                        class="form-control mb-2"
+                        class="form-control mb-1 mb-2"
                         name="writers"
                     />
                 </div>
