@@ -49,18 +49,34 @@
                         @endforeach
                     </li>
                 </ul>
-                <a
-                    href="{{ route("comics.index") }}"
-                    class="btn btn-primary mt-3"
-                >
-                    Back
-                </a>
-                <a
-                    href="{{ route("comics.edit", $comic->id) }}"
-                    class="btn btn-primary mt-3"
-                >
-                    Edit
-                </a>
+                <div class="d-flex align-center">
+                    <a
+                        href="{{ route("comics.index") }}"
+                        class="btn btn-primary me-2 mt-3"
+                    >
+                        Back
+                    </a>
+                    <a
+                        href="{{ route("comics.edit", $comic->id) }}"
+                        class="btn btn-primary me-2 mt-3"
+                    >
+                        Edit
+                    </a>
+                    <form
+                        action="{{ route("comics.destroy", $comic->id) }}"
+                        method="POST"
+                    >
+                        @csrf
+                        @method("DELETE")
+                        <button
+                            type="submit"
+                            class="btn btn-outline-danger mt-3"
+                            onclick="return confirm('Are you sure you want to delete {{ $comic->title }}?');"
+                        >
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>

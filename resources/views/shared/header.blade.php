@@ -57,12 +57,14 @@
                                 Add New Comic
                             </a>
                         </li>
-                        <li>
+                        {{--
+                            <li>
                             <a class="dropdown-item" href="#">Edit Comic</a>
-                        </li>
-                        <li>
+                            </li>
+                            <li>
                             <a class="dropdown-item" href="#">Delete Comic</a>
-                        </li>
+                            </li>
+                        --}}
                     </ul>
                 </li>
                 <li class="nav-item pe-3">
