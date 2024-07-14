@@ -55,6 +55,12 @@
                 >
                     Back
                 </a>
+                <a
+                    href="{{ route("comics.edit", $comic->id) }}"
+                    class="btn btn-primary mt-3"
+                >
+                    Edit
+                </a>
             </div>
         </div>
     </div>

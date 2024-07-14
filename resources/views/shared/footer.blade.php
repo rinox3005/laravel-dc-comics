@@ -133,25 +133,27 @@
                 </ul>
             </div>
             <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 mb-3">
-                <h5>Sites</h5>
+                <h5>Extras</h5>
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2">
-                        <a href="#" class="nav-link text-light p-0">DC</a>
+                        <a href="#" class="nav-link text-light p-0">Jobs</a>
                     </li>
                     <li class="nav-item mb-2">
                         <a href="#" class="nav-link text-light p-0">
-                            DC UNIVERSE INFINITE
+                            Talent Workshops
                         </a>
                     </li>
                     <li class="nav-item mb-2">
-                        <a href="#" class="nav-link text-light p-0">DC Kids</a>
+                        <a href="#" class="nav-link text-light p-0">
+                            CPSC Certificates
+                        </a>
                     </li>
                     <li class="nav-item mb-2">
-                        <a href="#" class="nav-link text-light p-0">DC Shop</a>
+                        <a href="#" class="nav-link text-light p-0">Ratings</a>
                     </li>
                     <li class="nav-item mb-2">
                         <a href="#" class="nav-link text-light p-0">
-                            MAD Magazine
+                            Shop Help
                         </a>
                     </li>
                 </ul>

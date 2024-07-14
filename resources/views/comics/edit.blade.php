@@ -12,10 +12,11 @@
         class="form-style position-relative text-light fw-semibold container my-4 px-4 py-4"
     >
         <h4 class="text-uppercase comics-label bg-primary fw-bold text-light">
-            Add new comic book
+            Edit Comic Book
         </h4>
-        <form action="{{ route("comics.store") }}" method="POST">
+        <form action="{{ route("comics.update", $comic->id) }}" method="POST">
             @csrf
+            @method("PUT")
             <div class="form-group">
                 <label class="mb-1" for="title">Title</label>
                 <input
@@ -23,6 +24,7 @@
                     class="form-control mb-1"
                     id="title"
                     name="title"
+                    value="{{ $comic->title }}"
                     required
                 />
             </div>
@@ -33,7 +35,9 @@
                     class="form-control mb-1"
                     id="description"
                     name="description"
-                ></textarea>
+                >
+{{ $comic->description }}</textarea
+                >
             </div>
 
             <div class="form-group">
@@ -43,6 +47,7 @@
                     class="form-control mb-1"
                     id="thumb"
                     name="thumb"
+                    value="{{ $comic->thumb }}"
                 />
             </div>
 
@@ -54,6 +59,7 @@
                     class="form-control mb-1"
                     id="price"
                     name="price"
+                    value="{{ $comic->price }}"
                 />
             </div>
 
@@ -64,6 +70,7 @@
                     class="form-control mb-1"
                     id="series"
                     name="series"
+                    value="{{ $comic->series }}"
                 />
             </div>
 
@@ -74,6 +81,7 @@
                     class="form-control mb-1"
                     id="sale_date"
                     name="sale_date"
+                    value="{{ $comic->sale_date }}"
                 />
             </div>
 
@@ -84,6 +92,7 @@
                     class="form-control mb-1"
                     id="type"
                     name="type"
+                    value="{{ $comic->type }}"
                 />
             </div>
 
@@ -94,6 +103,7 @@
                         type="text"
                         class="form-control mb-1 mb-2"
                         name="artists"
+                        value="{{ implode(", ", json_decode($comic->artists, true)) }}"
                     />
                 </div>
             </div>
@@ -105,6 +115,7 @@
                         type="text"
                         class="form-control mb-1 mb-2"
                         name="writers"
+                        value="{{ implode(", ", json_decode($comic->writers, true)) }}"
                     />
                 </div>
             </div>
@@ -114,7 +125,7 @@
                     Back
                 </a>
                 <button type="submit" class="btn btn-primary">
-                    Create Comic
+                    Update Comic
                 </button>
             </div>
         </form>
