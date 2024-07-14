@@ -59,7 +59,7 @@
                     class="form-control mb-1"
                     id="price"
                     name="price"
-                    value="{{ $comic->price }}"
+                    value="{{ str_replace('$', "", $comic->price) }}"
                 />
             </div>
 
