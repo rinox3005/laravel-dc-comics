@@ -5,6 +5,7 @@
 @endsection
 
 @section("main")
+    {{-- Carosello Banner Home --}}
     <main class="mt-0">
         <div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -63,7 +64,7 @@
                     Trending DC Movies
                 </h4>
             </div>
-
+            {{-- Carosello Movies --}}
             <div id="moviesCarousel" class="carousel slide">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -215,6 +216,78 @@
                     class="carousel-control-next"
                     type="button"
                     data-bs-target="#moviesCarousel"
+                    data-bs-slide="next"
+                >
+                    <span
+                        class="carousel-control-next-icon ms-5"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            {{-- Carosello Comics --}}
+            <div class="trending-container">
+                <h4
+                    class="text-light fw-semibold bg-primary text-uppercase mb-2 mt-4 p-2"
+                >
+                    Trending DC Comics
+                </h4>
+            </div>
+            <div id="comicsCarousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="cards-wrapper">
+                            @foreach ($trendingComics1 as $comic)
+                                <div class="card">
+                                    <img
+                                        class="thumb card-img-top"
+                                        src="{{ $comic->thumb }}"
+                                        alt="{{ $comic->title }}"
+                                    />
+                                    <div class="card-body">
+                                        <h3 class="card-title">
+                                            {{ $comic->title }}
+                                        </h3>
+                                    </div>
+                                </div>
+                            @endforeach
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            @foreach ($trendingComics2 as $comic)
+                                <div class="card">
+                                    <img
+                                        class="thumb card-img-top"
+                                        src="{{ $comic->thumb }}"
+                                        alt="{{ $comic->title }}"
+                                    />
+                                    <div class="card-body">
+                                        <h3 class="card-title">
+                                            {{ $comic->title }}
+                                        </h3>
+                                    </div>
+                                </div>
+                            @endforeach
+                        </div>
+                    </div>
+                </div>
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#comicsCarousel"
+                    data-bs-slide="prev"
+                >
+                    <span
+                        class="carousel-control-prev-icon me-5"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#comicsCarousel"
                     data-bs-slide="next"
                 >
                     <span
