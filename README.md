@@ -14,7 +14,14 @@ Definire le prime operazioni CRUD con le relative view:
 -   show()
 -   create()
 -   store()
+-   edit()
+-   update()
+-   destroy()
 
 ## Bonus
 
 Creare il seeder per la tabella comics utilizzando il file di riferimento allegato.
+
+## Bonus 2
+
+Quando l'utente clicca sul pulsante "delete", chiedere conferma della cancellazione, prima di eliminare l'elemento

@@ -62,18 +62,50 @@
                     >
                         Edit
                     </a>
+                    <!-- Modal Button -->
+                    <button
+                        type="button"
+                        class="btn btn-outline-danger mt-3"
+                        data-bs-toggle="modal"
+                        data-bs-target="#deleteModal"
+                    >
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+        class="modal fade"
+        id="deleteModal"
+        tabindex="-1"
+        aria-labelledby="deleteModalLabel"
+        aria-hidden="true"
+    >
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-body">
+                    <h5>Delete Confirmation:</h5>
+                    <p>Are you sure you want to delete {{ $comic->title }}?</p>
+                </div>
+                <div class="modal-footer">
+                    <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                    >
+                        Cancel
+                    </button>
                     <form
                         action="{{ route("comics.destroy", $comic->id) }}"
                         method="POST"
                     >
                         @csrf
                         @method("DELETE")
-                        <button
-                            type="submit"
-                            class="btn btn-outline-danger mt-3"
-                            onclick="return confirm('Are you sure you want to delete {{ $comic->title }}?');"
-                        >
-                            <i class="fa-solid fa-trash"></i>
+                        <button type="submit" class="btn btn-outline-danger">
+                            Confirm Delete
                         </button>
                     </form>
                 </div>

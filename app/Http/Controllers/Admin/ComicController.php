@@ -73,6 +73,8 @@ class ComicController extends Controller
     {
         $data = $request->all();
 
+        // $comic->update($data);
+
         $comic->title = $data['title'];
         $comic->description = $data['description'];
         $comic->thumb = $data['thumb'];
@@ -93,6 +95,8 @@ class ComicController extends Controller
      */
     public function destroy(Comic $comic)
     {
+        $comic = Comic::findOrFail($comic->id);
+
         $comic->delete();
         return redirect()->route('comics.index');
     }
