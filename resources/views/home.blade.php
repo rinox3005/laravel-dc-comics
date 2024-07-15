@@ -239,16 +239,20 @@
                         <div class="cards-wrapper">
                             @foreach ($trendingComics1 as $comic)
                                 <div class="card">
-                                    <img
-                                        class="thumb card-img-top"
-                                        src="{{ $comic->thumb }}"
-                                        alt="{{ $comic->title }}"
-                                    />
-                                    <div class="card-body">
-                                        <h3 class="card-title">
-                                            {{ $comic->title }}
-                                        </h3>
-                                    </div>
+                                    <a
+                                        href="{{ route("comics.show", $comic) }}"
+                                    >
+                                        <img
+                                            class="thumb card-img-top"
+                                            src="{{ $comic->thumb }}"
+                                            alt="{{ $comic->title }}"
+                                        />
+                                        <div class="card-body">
+                                            <h3 class="card-title text-light">
+                                                {{ $comic->title }}
+                                            </h3>
+                                        </div>
+                                    </a>
                                 </div>
                             @endforeach
                         </div>
@@ -257,16 +261,20 @@
                         <div class="cards-wrapper">
                             @foreach ($trendingComics2 as $comic)
                                 <div class="card">
-                                    <img
-                                        class="thumb card-img-top"
-                                        src="{{ $comic->thumb }}"
-                                        alt="{{ $comic->title }}"
-                                    />
-                                    <div class="card-body">
-                                        <h3 class="card-title">
-                                            {{ $comic->title }}
-                                        </h3>
-                                    </div>
+                                    <a
+                                        href="{{ route("comics.show", $comic) }}"
+                                    >
+                                        <img
+                                            class="thumb card-img-top"
+                                            src="{{ $comic->thumb }}"
+                                            alt="{{ $comic->title }}"
+                                        />
+                                        <div class="card-body">
+                                            <h3 class="card-title text-light">
+                                                {{ $comic->title }}
+                                            </h3>
+                                        </div>
+                                    </a>
                                 </div>
                             @endforeach
                         </div>
