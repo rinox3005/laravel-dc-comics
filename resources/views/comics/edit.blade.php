@@ -1,5 +1,9 @@
 @extends("layouts.base-layout")
 
+@section("title")
+    DC Comics - Edit {{ $comic->title }}
+@endsection
+
 @section("main")
     <div class="create-container">
         <img

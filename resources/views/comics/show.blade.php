@@ -1,5 +1,9 @@
 @extends("layouts.base-layout")
 
+@section("title")
+    DC Comics - {{ $comic->title }}
+@endsection
+
 @section("main")
     <div class="text-light container my-5">
         <div class="row">

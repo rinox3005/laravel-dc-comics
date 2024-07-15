@@ -1,5 +1,9 @@
 @extends("layouts.base-layout")
 
+@section("title")
+    DC Comics - Add New Comic Book
+@endsection
+
 @section("main")
     <div class="create-container">
         <img

@@ -1,5 +1,9 @@
 @extends("layouts.base-layout")
 
+@section("title")
+    DC Comics - Comics List
+@endsection
+
 @section("main")
     <div>
         <img

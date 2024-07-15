@@ -1,5 +1,9 @@
 @extends("layouts.base-layout")
 
+@section("title")
+    DC Comics - Home
+@endsection
+
 @section("main")
     <main class="mt-0">
         <div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
