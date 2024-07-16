@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Comic;
+use App\Http\Requests\ComicRequest;
 use Illuminate\Http\Request;
 
 class ComicController extends Controller
@@ -29,9 +30,9 @@ class ComicController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(ComicRequest $request)
     {
-        $data = $this->validation($request);
+        $data = $request->validated();
 
         $comic = new Comic();
 
@@ -69,9 +70,9 @@ class ComicController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Comic $comic)
+    public function update(ComicRequest $request, Comic $comic)
     {
-        $data = $this->validation($request);
+        $data = $request->validated();
 
         // $comic->update($data);
 
@@ -99,37 +100,5 @@ class ComicController extends Controller
 
         $comic->delete();
         return redirect()->route('comics.index');
-    }
-
-    /**
-     * Validate the request data.
-     */
-    public function validation(Request $request)
-    {
-        return $request->validate([
-            'title' => 'required|string|max:255',
-            'description' => 'required|string',
-            'thumb' => 'required|url',
-            'price' => 'required|numeric|min:0',
-            'series' => 'required|string|max:255',
-            'sale_date' => 'required|date',
-            'type' => 'required|string|max:255',
-            'artists' => 'required|string',
-            'writers' => 'required|string',
-        ], [
-            'title.required' => 'Title is required.',
-            'description.required' => 'Description is required.',
-            'thumb.required' => 'Thumbnail URL is required.',
-            'thumb.url' => 'Thumbnail URL is not valid.',
-            'price.required' => 'Price is required.',
-            'price.numeric' => 'Price must be a number.',
-            'price.min' => 'Price must be at least 0.',
-            'series.required' => 'Series is required.',
-            'sale_date.required' => 'Sale date is required.',
-            'sale_date.date' => 'Sale date is not valid.',
-            'type.required' => 'Type is required.',
-            'artists.required' => 'Artists are required.',
-            'writers.required' => 'Writers are required.',
-        ]);
     }
 }
