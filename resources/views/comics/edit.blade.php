@@ -25,34 +25,43 @@
                 <label class="mb-1" for="title">Title</label>
                 <input
                     type="text"
-                    class="form-control mb-1"
+                    class="form-control @error("title") is-invalid @enderror mb-1"
                     id="title"
                     name="title"
-                    value="{{ $comic->title }}"
+                    value="{{ old("title", $comic->title) }}"
                     required
                 />
+                @error("title")
+                    <div class="invalid-feedback">{{ $message }}</div>
+                @enderror
             </div>
 
             <div class="form-group">
                 <label class="mb-1" for="description">Description</label>
                 <textarea
-                    class="form-control mb-1"
+                    class="form-control @error("description") is-invalid @enderror mb-1"
                     id="description"
                     name="description"
                 >
-{{ $comic->description }}</textarea
+{{ old("description", $comic->description) }}</textarea
                 >
+                @error("description")
+                    <div class="invalid-feedback">{{ $message }}</div>
+                @enderror
             </div>
 
             <div class="form-group">
                 <label class="mb-1" for="thumb">Thumbnail URL</label>
                 <input
                     type="text"
-                    class="form-control mb-1"
+                    class="form-control @error("thumb") is-invalid @enderror mb-1"
                     id="thumb"
                     name="thumb"
-                    value="{{ $comic->thumb }}"
+                    value="{{ old("thumb", $comic->thumb) }}"
                 />
+                @error("thumb")
+                    <div class="invalid-feedback">{{ $message }}</div>
+                @enderror
             </div>
 
             <div class="form-group">
@@ -60,44 +69,56 @@
                 <input
                     type="number"
                     step="0.01"
-                    class="form-control mb-1"
+                    class="form-control @error("price")  is-invalid @enderror mb-1"
                     id="price"
                     name="price"
-                    value="{{ str_replace('$', "", $comic->price) }}"
+                    value="{{ old("price", str_replace('$', "", $comic->price)) }}"
                 />
+                @error("price")
+                        <div class="invalid-feedback">{{ $message }}</div>
+                @enderror
             </div>
 
             <div class="form-group">
                 <label class="mb-1" for="series">Series</label>
                 <input
                     type="text"
-                    class="form-control mb-1"
+                    class="form-control @error("series")  is-invalid @enderror mb-1"
                     id="series"
                     name="series"
-                    value="{{ $comic->series }}"
+                    value="{{ old("series", $comic->series) }}"
                 />
+                @error("series")
+                        <div class="invalid-feedback">{{ $message }}</div>
+                @enderror
             </div>
 
             <div class="form-group">
                 <label class="mb-1" for="sale_date">Sale Date</label>
                 <input
                     type="date"
-                    class="form-control mb-1"
+                    class="form-control @error("sale_date")  is-invalid @enderror mb-1"
                     id="sale_date"
                     name="sale_date"
-                    value="{{ $comic->sale_date }}"
+                    value="{{ old("sale_date", $comic->sale_date) }}"
                 />
+                @error("sale_date")
+                        <div class="invalid-feedback">{{ $message }}</div>
+                @enderror
             </div>
 
             <div class="form-group">
                 <label class="mb-1" for="type">Type</label>
                 <input
                     type="text"
-                    class="form-control mb-1"
+                    class="form-control @error("type")  is-invalid @enderror mb-1"
                     id="type"
                     name="type"
-                    value="{{ $comic->type }}"
+                    value="{{ old("type", $comic->type) }}"
                 />
+                @error("type")
+                        <div class="invalid-feedback">{{ $message }}</div>
+                @enderror
             </div>
 
             <div class="form-group">
@@ -105,10 +126,13 @@
                 <div id="artists">
                     <input
                         type="text"
-                        class="form-control mb-1 mb-2"
+                        class="form-control @error("artists")  is-invalid @enderror mb-1 mb-2"
                         name="artists"
-                        value="{{ implode(", ", json_decode($comic->artists, true)) }}"
+                        value="{{ old("artists", implode(", ", json_decode($comic->artists, true))) }}"
                     />
+                    @error("artists")
+                            <div class="invalid-feedback">{{ $message }}</div>
+                    @enderror
                 </div>
             </div>
 
@@ -117,10 +141,13 @@
                 <div id="writers">
                     <input
                         type="text"
-                        class="form-control mb-1 mb-2"
+                        class="form-control @error("writers")  is-invalid @enderror mb-1 mb-2"
                         name="writers"
-                        value="{{ implode(", ", json_decode($comic->writers, true)) }}"
+                        value="{{ old("writers", implode(", ", json_decode($comic->writers, true))) }}"
                     />
+                    @error("writers")
+                            <div class="invalid-feedback">{{ $message }}</div>
+                    @enderror
                 </div>
             </div>
 
