@@ -25,3 +25,15 @@ Creare il seeder per la tabella comics utilizzando il file di riferimento allega
 ## Bonus 2
 
 Quando l'utente clicca sul pulsante "delete", chiedere conferma della cancellazione, prima di eliminare l'elemento
+
+## Bonus 3
+
+Validare gli input ricevuti in fase di creazione e modifica, rispondendo con errori chiari e personalizzati.
+
+## Bonus 4
+
+Utilizzare le Request personalizzate per validare i dati
+
+## Bonus 5
+
+Gestire il titolo unico e validarlo in creazione e aggiornamento

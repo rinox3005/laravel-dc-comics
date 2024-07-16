@@ -31,7 +31,7 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
-        $data = $request->all();
+        $data = $this->validation($request);
 
         $comic = new Comic();
 
@@ -71,7 +71,7 @@ class ComicController extends Controller
      */
     public function update(Request $request, Comic $comic)
     {
-        $data = $request->all();
+        $data = $this->validation($request);
 
         // $comic->update($data);
 
@@ -99,5 +99,37 @@ class ComicController extends Controller
 
         $comic->delete();
         return redirect()->route('comics.index');
+    }
+
+    /**
+     * Validate the request data.
+     */
+    public function validation(Request $request)
+    {
+        return $request->validate([
+            'title' => 'required|string|max:255',
+            'description' => 'required|string',
+            'thumb' => 'required|url',
+            'price' => 'required|numeric|min:0',
+            'series' => 'required|string|max:255',
+            'sale_date' => 'required|date',
+            'type' => 'required|string|max:255',
+            'artists' => 'required|string',
+            'writers' => 'required|string',
+        ], [
+            'title.required' => 'Title is required.',
+            'description.required' => 'Description is required.',
+            'thumb.required' => 'Thumbnail URL is required.',
+            'thumb.url' => 'Thumbnail URL is not valid.',
+            'price.required' => 'Price is required.',
+            'price.numeric' => 'Price must be a number.',
+            'price.min' => 'Price must be at least 0.',
+            'series.required' => 'Series is required.',
+            'sale_date.required' => 'Sale date is required.',
+            'sale_date.date' => 'Sale date is not valid.',
+            'type.required' => 'Type is required.',
+            'artists.required' => 'Artists are required.',
+            'writers.required' => 'Writers are required.',
+        ]);
     }
 }
