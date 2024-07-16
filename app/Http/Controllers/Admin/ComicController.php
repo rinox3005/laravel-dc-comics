@@ -3,9 +3,9 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreComicRequest;
+use App\Http\Requests\UpdateComicRequest;
 use App\Models\Comic;
-use App\Http\Requests\ComicRequest;
-use Illuminate\Http\Request;
 
 class ComicController extends Controller
 {
@@ -30,12 +30,11 @@ class ComicController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(ComicRequest $request)
+    public function store(StoreComicRequest $request)
     {
         $data = $request->validated();
 
         $comic = new Comic();
-
         $comic->title = $data['title'];
         $comic->description = $data['description'];
         $comic->thumb = $data['thumb'];
@@ -70,11 +69,9 @@ class ComicController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(ComicRequest $request, Comic $comic)
+    public function update(UpdateComicRequest $request, Comic $comic)
     {
         $data = $request->validated();
-
-        // $comic->update($data);
 
         $comic->title = $data['title'];
         $comic->description = $data['description'];

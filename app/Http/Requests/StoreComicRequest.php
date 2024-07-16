@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class ComicRequest extends FormRequest
+class StoreComicRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -16,13 +16,11 @@ class ComicRequest extends FormRequest
 
     /**
      * Get the validation rules that apply to the request.
-     *
-     * @return array<string, \Illuminate\Contracts\Validation\ValidationRule|array<mixed>|string>
      */
     public function rules(): array
     {
         return [
-            'title' => 'required|string|min:5|max:255',
+            'title' => 'required|string|min:5|max:255|unique:comics,title',
             'description' => 'required|string',
             'thumb' => 'required|url',
             'price' => 'required|numeric|min:0',
@@ -42,6 +40,7 @@ class ComicRequest extends FormRequest
         return [
             'title.required' => 'Title is required.',
             'title.min' => 'Title must be at least 5 characters.',
+            'title.unique' => 'Title must be unique.',
             'description.required' => 'Description is required.',
             'thumb.required' => 'Thumbnail URL is required.',
             'thumb.url' => 'Thumbnail URL is not valid.',
